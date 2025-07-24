@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { ethers } from "ethers";
-
+import GlobeBackground from "./GlobeBackground";
 const RPC_URL = "https://testnet-rpc.acrypto.cloud";
 
 const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
@@ -68,23 +68,23 @@ function App() {
 
   return (
     <div>
+     
       <nav className="navbar">
         <div className="container">
           <div className="navbar-brand">
-            <h1 className="navbar-item is-size-4">
-              <img src="/logo.png" />
-            </h1>
+            <img src="/logo.png" alt="acrypto" width={160} height={160} />
           </div>
           <div id="navbarMenu" className="navbar-menu">
             <div className="navbar-end is-align-items-center"></div>
           </div>
         </div>
       </nav>
-      <section className="hero is-fullheight">
+       <GlobeBackground />
+      <section className="">
         <div className="faucet-hero-body">
           <div className="container has-text-centered main-content">
             <h1 className="title is-1">Faucet</h1>
-            <p>Fast and reliable. 10 ACC a day.</p>
+            <p>Fast and reliable. 10 OCT/day.</p>
             <div className="mt-5">
               {error && <div className="withdraw-error">{error}</div>}
               {success && (

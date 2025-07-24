@@ -1,7 +1,7 @@
-body {
+/* body {
   background-color: #030B15;
   color: white;
-}
+} */
 
 .title {
   color: white;
@@ -24,6 +24,7 @@ body {
 
 .address-box {
   padding: 3em;
+   background-color: rgba(250, 250, 250, 0.3); 
 }
 
 .box .title {
@@ -54,6 +55,7 @@ body {
   margin-top: 100px;
 }
 
+
 .withdraw-error {
   color: red;
 }
@@ -75,4 +77,10 @@ body {
 
 .tx-info li {
   margin-bottom: 5px;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  background: transparent;
+  color:white;
 }
